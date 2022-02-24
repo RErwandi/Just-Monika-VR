@@ -60,3 +60,6 @@ crashlytics-build.properties
 
 # MMD4Mecanim
 [Aa]ssets/MMD4Mecanim*
+
+#Final IK
+[Aa]ssets/Plugins/RootMotion*
