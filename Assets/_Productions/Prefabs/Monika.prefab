@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8375019385557052904}
   - component: {fileID: 3853906318500010697}
+  - component: {fileID: 3722252033702218803}
   m_Layer: 0
   m_Name: Monika
   m_TagString: Untagged
@@ -48,6 +49,110 @@ MonoBehaviour:
   autoBlink: 1
   autoBlinkInterval: {x: 3, y: 8}
   blinkFacialData: {fileID: 11400000, guid: 22072cc74e096b34aa5464a25ffc1bf7, type: 2}
+--- !u!114 &3722252033702218803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8375019385557052905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 776adaaacdc5c4e8ab0395120a6e972b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fixTransforms: 1
+  solver:
+    executedInEditor: 0
+    IKPosition: {x: 1.0026858, y: 1.1183023, z: 0.9642386}
+    IKPositionWeight: 1
+    root: {fileID: 8375019385557052904}
+    target: {fileID: 0}
+    spine:
+    - transform: {fileID: 6983230071333235552}
+      weight: 0
+      solverPosition: {x: 0, y: 0, z: 0}
+      solverRotation: {x: 0, y: 0, z: 0, w: 0}
+      defaultLocalPosition: {x: -0, y: 0.004923248, z: 0.00000082969666}
+      defaultLocalRotation: {x: 0, y: -0, z: -0, w: 1}
+      length: 0
+      sqrMag: 0
+      axis: {x: 0, y: 0, z: 1.0000002}
+      baseForwardOffsetEuler: {x: 0, y: 0, z: 0}
+    - transform: {fileID: 5579113150877990882}
+      weight: 0
+      solverPosition: {x: 0, y: 0, z: 0}
+      solverRotation: {x: 0, y: 0, z: 0, w: 0}
+      defaultLocalPosition: {x: -0, y: 0.09155495, z: -0.0040286374}
+      defaultLocalRotation: {x: 0, y: -0, z: -0, w: 1}
+      length: 0
+      sqrMag: 0
+      axis: {x: 0, y: 0, z: 1.0000002}
+      baseForwardOffsetEuler: {x: 0, y: 0, z: 0}
+    head:
+      transform: {fileID: 5804298077218125692}
+      weight: 1
+      solverPosition: {x: 0, y: 0, z: 0}
+      solverRotation: {x: 0, y: 0, z: 0, w: 1}
+      defaultLocalPosition: {x: -0, y: 0.07203827, z: 0.0007097995}
+      defaultLocalRotation: {x: 0, y: -0, z: -0, w: 1}
+      length: 0
+      sqrMag: 0
+      axis: {x: 0, y: 0, z: 1.0000002}
+      baseForwardOffsetEuler: {x: 0, y: 0, z: 0}
+    eyes:
+    - transform: {fileID: 4200887115430579565}
+      weight: 0
+      solverPosition: {x: 0, y: 0, z: 0}
+      solverRotation: {x: 0, y: 0, z: 0, w: 0}
+      defaultLocalPosition: {x: 0.027810719, y: 0.053762816, z: 0.020831998}
+      defaultLocalRotation: {x: 0, y: -0, z: -0, w: 1}
+      length: 0
+      sqrMag: 0
+      axis: {x: 0, y: 0, z: 1.0000002}
+      baseForwardOffsetEuler: {x: 0, y: 0, z: 0}
+    - transform: {fileID: 4384639915971318402}
+      weight: 0
+      solverPosition: {x: 0, y: 0, z: 0}
+      solverRotation: {x: 0, y: 0, z: 0, w: 0}
+      defaultLocalPosition: {x: -0.027810719, y: 0.053762816, z: 0.020831998}
+      defaultLocalRotation: {x: 0, y: -0, z: -0, w: 1}
+      length: 0
+      sqrMag: 0
+      axis: {x: 0, y: 0, z: 1.0000002}
+      baseForwardOffsetEuler: {x: 0, y: 0, z: 0}
+    bodyWeight: 0.5
+    headWeight: 0.5
+    eyesWeight: 0.225
+    clampWeight: 0.75
+    clampWeightHead: 0.75
+    clampWeightEyes: 0.75
+    clampSmoothing: 2
+    spineWeightCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.3
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    spineTargetOffset: {x: 0, y: 0, z: 0}
 --- !u!1001 &1516053154200900228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -125,6 +230,36 @@ PrefabInstance:
 --- !u!4 &1333244928242496879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e18bdc0aa94ee774d98d21a1b486d65b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1516053154200900228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6983230071333235552 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8494757085901617636, guid: e18bdc0aa94ee774d98d21a1b486d65b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1516053154200900228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5579113150877990882 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -2853338680934027930, guid: e18bdc0aa94ee774d98d21a1b486d65b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1516053154200900228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5804298077218125692 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4213372439522908680, guid: e18bdc0aa94ee774d98d21a1b486d65b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1516053154200900228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4200887115430579565 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5816795994045538327, guid: e18bdc0aa94ee774d98d21a1b486d65b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1516053154200900228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4384639915971318402 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -6209544099977412602, guid: e18bdc0aa94ee774d98d21a1b486d65b,
     type: 3}
   m_PrefabInstance: {fileID: 1516053154200900228}
   m_PrefabAsset: {fileID: 0}
