@@ -30,13 +30,13 @@ MonoBehaviour:
     serializationDepthLimit: 64
     assemblyNames:
     - Assembly-CSharp
-    - Sirenix.OdinInspector.CompatibilityLayer
     - com.gamelokal.toolkit
     - ES3
     - Assembly-CSharp-firstpass
+    - Sirenix.OdinInspector.CompatibilityLayer
+    - Sirenix.OdinInspector.CompatibilityLayer.Editor
     - UMotionSourceApplication
     - UMotionSourceEditor
-    - Sirenix.OdinInspector.CompatibilityLayer.Editor
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1

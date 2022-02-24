@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Blink
   m_EditorClassIdentifier: 
   settings:
-  - index: 3
+  - index: 0
     value: 100

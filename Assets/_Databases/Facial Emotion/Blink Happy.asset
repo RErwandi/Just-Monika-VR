@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Blink Happy
   m_EditorClassIdentifier: 
   settings:
-  - index: 4
+  - index: 1
     value: 100
