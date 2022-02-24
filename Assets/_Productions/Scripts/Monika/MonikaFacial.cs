@@ -30,7 +30,8 @@ namespace JustMonika.VR
 
         private void Start()
         {
-            StartCoroutine(Blink());
+            if(autoBlink)
+                StartCoroutine(Blink());
         }
 
         private void OnDestroy()
@@ -78,7 +79,7 @@ namespace JustMonika.VR
             hasFacial = true;
         }
 
-        private void ResetFacial()
+        public void ResetFacial()
         {
             for (int i = 0; i < skinnedMesh.blendShapeCount; i++)
             {
