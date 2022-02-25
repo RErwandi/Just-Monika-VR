@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -60,6 +61,12 @@ namespace JustMonika.VR
         private void NextConversation()
         {
             iDialogue++;
+            StartCoroutine(DelayConversation());
+        }
+
+        private IEnumerator DelayConversation()
+        {
+            yield return new WaitForSeconds(GameSettings.Instance.autoForwardTime);
             PlayCurrentConversation();
         }
     }

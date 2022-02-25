@@ -39,7 +39,7 @@ namespace JustMonika.VR
 
         public void PlayText(string s)
         {
-            dialogueText.text = s;
+            dialogueText.text = s.ToDialogue();
         }
 
         private void Next()
