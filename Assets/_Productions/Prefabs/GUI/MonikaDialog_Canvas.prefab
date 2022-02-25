@@ -116,7 +116,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 1.4299927, y: 1.8139954}
-  m_SizeDelta: {x: 1.5, y: 0.3}
+  m_SizeDelta: {x: 1, y: 0.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7286682403246449
 Canvas:
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &7286682403246415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,7 +240,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -0.14, y: -0.1}
+  m_SizeDelta: {x: -0.08000001, y: -0.049999997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7286682598202870
 CanvasRenderer:
@@ -273,15 +273,14 @@ MonoBehaviour:
   m_text: '"Here''s Monika''s writing tip of the day!"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 814c917e3d93dc14f950e4bb76d1128e, type: 2}
-  m_sharedMaterial: {fileID: 7850544905648586611, guid: 814c917e3d93dc14f950e4bb76d1128e,
-    type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 8682df6d3173da34bbf3cbf658a37ff1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -298,8 +297,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.03
+  m_fontSizeBase: 0.03
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0

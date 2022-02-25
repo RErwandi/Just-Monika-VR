@@ -6,15 +6,17 @@ namespace JustMonika.VR
 {
     public class MonikaConversation : MonoBehaviour
     {
-        public MonikaDialogueView dialogueView;
         public MonikaFacial facial;
 
+        private MonikaDialogueView dialogueView;
         private ConversationData currentConversation;
         private int iDialogue;
 
         private void Start()
         {
+            dialogueView = FindObjectOfType<MonikaDialogueView>();
             dialogueView.RegisterNextButton(NextConversation);
+            dialogueView.Hide();
         }
 
         [Button]

@@ -1,31 +1,14 @@
 using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace JustMonika.VR
 {
     public class MonikaDialogueView : MonoBehaviour
     {
         public TextMeshProUGUI dialogueText;
-        public Button nextButton;
 
         private Action onNext;
-
-        private void OnEnable()
-        {
-            nextButton.onClick.AddListener(Next);
-        }
-        
-        private void OnDisable()
-        {
-            nextButton.onClick.RemoveListener(Next);
-        }
-
-        private void Start()
-        {
-            Hide();
-        }
 
         public void RegisterNextButton(Action callback)
         {
@@ -45,6 +28,7 @@ namespace JustMonika.VR
         public void PlayText(string s)
         {
             dialogueText.text = s;
+            Invoke("Next", 3f);
         }
 
         private void Next()

@@ -4504,6 +4504,11 @@ PrefabInstance:
       propertyPath: m_UpdateWhenOffscreen
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8521405277163491821, guid: 23d7a995baf8507408d966046506c851,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8521405277163491823, guid: 23d7a995baf8507408d966046506c851,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -18505,6 +18510,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 7691766036195445991, guid: 0b33b2aefb68b3f4baa53e2fe7ef71d6,
+        type: 3}
+      propertyPath: RemoteGrabLayers.m_Bits
+      value: 1847
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b33b2aefb68b3f4baa53e2fe7ef71d6, type: 3}
 --- !u!4 &9126599903212033464 stripped
