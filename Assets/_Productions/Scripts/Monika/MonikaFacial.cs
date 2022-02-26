@@ -66,7 +66,6 @@ namespace JustMonika.VR
             StartCoroutine(Blink());
         }
 
-        [Button]
         public void SetFacial(FacialData facialData)
         {
             ResetFacial();

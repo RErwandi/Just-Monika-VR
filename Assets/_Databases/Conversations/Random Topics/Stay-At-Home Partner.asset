@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a62dde94e123094d80f063c1998c211, type: 3}
+  m_Name: Stay-At-Home Partner
+  m_EditorClassIdentifier: 
+  dialogues:
+  - face: {fileID: 0}
+    text: You know, it's funny, because even though I've always had a lot of drive...
+  - face: {fileID: 0}
+    text: There's something kind of enticing about being the stay-at-home partner.
+  - face: {fileID: 0}
+    text: I guess I'm, like, perpetuating gender roles or whatever by saying that.
+  - face: {fileID: 0}
+    text: But being able to keep the house clean, and shop, and decorate, and things
+      like that...
+  - face: {fileID: 0}
+    text: And having a nice dinner for you when you come home...
+  - face: {fileID: 0}
+    text: Is that a weird fantasy?
+  - face: {fileID: 0}
+    text: I mean...I'm not sure if I could actually see myself doing that.
+  - face: {fileID: 0}
+    text: I wouldn't really be able to put that over striving for a fulfilling career.
+  - face: {fileID: 0}
+    text: It's kinda cute to think about, though.

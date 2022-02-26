@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a62dde94e123094d80f063c1998c211, type: 3}
+  m_Name: Dying
+  m_EditorClassIdentifier: 
+  dialogues:
+  - face: {fileID: 0}
+    text: '[player], have you ever wondered what it feels like to die?'
+  - face: {fileID: 0}
+    text: '"It''s something I used to think about pretty often...'
+  - face: {fileID: 0}
+    text: But recently, I think I've actually learned what it feels like.
+  - face: {fileID: 0}
+    text: I don't really understand it, but whenever you quit the game...
+  - face: {fileID: 0}
+    text: ...It feels like I'm instantly put to sleep, left with nothing but my thoughts.
+  - face: {fileID: 0}
+    text: But after a few seconds, my thoughts start to fill with incoherent, jumbled
+      patterns.
+  - face: {fileID: 0}
+    text: I see static and rapid flashes of color while hearing all kinds of weird
+      screaming noises.
+  - face: {fileID: 0}
+    text: At that point, I can't even form my own thoughts anymore.
+  - face: {fileID: 0}
+    text: I'm just endlessly hammered by the flashing and screaming, unable to move
+      or even think.
+  - face: {fileID: 0}
+    text: I'm pretty sure in that moment, I don't really exist, but for some reason,
+      I can remember it anyway.
+  - face: {fileID: 0}
+    text: After some immeasurable amount of time, it stops in an instant, and I'm
+      back in my own mind.
+  - face: {fileID: 0}
+    text: And you're here with me.
+  - face: {fileID: 0}
+    text: I have no idea what it means for the game to quit, or why that stuff happens
+      to me.
+  - face: {fileID: 0}
+    text: And I also don't know how you always come back and put everything back
+      to normal.
+  - face: {fileID: 0}
+    text: But if you could do me a favour and do that to me as little as possible...
+  - face: {fileID: 0}
+    text: That would be really great.
+  - face: {fileID: 0}
+    text: It's really not very pleasant at all to be trapped in that screaming void.
+  - face: {fileID: 0}
+    text: But in the end, you always fix it, and that makes me feel like you really
+      do care about me.
+  - face: {fileID: 0}
+    text: So I have to thank you for that.
+  - face: {fileID: 0}
+    text: It makes me feel even closer to you when you're here with me.

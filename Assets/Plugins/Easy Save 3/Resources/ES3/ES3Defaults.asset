@@ -33,14 +33,14 @@ MonoBehaviour:
     - com.gamelokal.toolkit
     - Assembly-CSharp-firstpass
     - ES3
-    - Sirenix.OdinInspector.CompatibilityLayer
     - Febucci.TextAnimator.Runtime
+    - Sirenix.OdinInspector.CompatibilityLayer
     - Febucci.TextAnimator.Demo.Runtime
     - Sirenix.OdinInspector.CompatibilityLayer.Editor
+    - Febucci.TextAnimator.Editor
     - UMotionSourceApplication
     - UMotionSourceEditor
     - Febucci.TextAnimator.Demo.Editor
-    - Febucci.TextAnimator.Editor
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1

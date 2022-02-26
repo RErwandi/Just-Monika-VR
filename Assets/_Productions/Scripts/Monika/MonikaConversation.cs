@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace JustMonika.VR
@@ -13,6 +12,8 @@ namespace JustMonika.VR
         private ConversationData currentConversation;
         private int iDialogue;
 
+        private Action onConversationFinish;
+        
         private void Start()
         {
             dialogueView = FindObjectOfType<MonikaDialogueView>();
@@ -20,11 +21,11 @@ namespace JustMonika.VR
             dialogueView.Hide();
         }
 
-        [Button]
-        public void PlayConversation(ConversationData conversation)
+        public void PlayConversation(ConversationData conversation, Action onFinish)
         {
             currentConversation = conversation;
             iDialogue = 0;
+            onConversationFinish = onFinish;
             dialogueView.Show();
             
             PlayCurrentConversation();
@@ -34,6 +35,7 @@ namespace JustMonika.VR
         {
             dialogueView.Hide();
             facial.ResetFacial();
+            onConversationFinish?.Invoke();
         }
 
         private void PlayCurrentConversation()

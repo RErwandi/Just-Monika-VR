@@ -9,5 +9,7 @@ namespace JustMonika.VR
 
         [Range(0f, 5f)]
         public float autoForwardTime = 1f;
+
+        public float randomChatInterval = 15f;
     }
 }
