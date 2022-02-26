@@ -1,3 +1,4 @@
+using Febucci.UI;
 using GameLokal.Toolkit;
 using Yarn.Unity;
 
@@ -11,11 +12,6 @@ namespace JustMonika.VR
         }
 
         public DialogueRunner dialogueRunner;
-
-        private void Start()
-        {
-            
-        }
 
         public void StartDialogue(string node)
         {

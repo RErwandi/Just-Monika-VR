@@ -56,7 +56,7 @@ MonoBehaviour:
     type: 3}
   _variableStorage: {fileID: 221676906211467065}
   dialogueViews:
-  - {fileID: 5017123783402612609}
+  - {fileID: 8071186003628826624}
   - {fileID: 1983988445104643726}
   startNode: Same_Room
   startAutomatically: 0
@@ -651,9 +651,9 @@ GameObject:
   - component: {fileID: 6204152383743682148}
   - component: {fileID: 6204152383743682149}
   - component: {fileID: 6204152383743682138}
-  - component: {fileID: 4921024542025227084}
+  - component: {fileID: 1038370223793117520}
   - component: {fileID: 6204152383743682139}
-  - component: {fileID: 5017123783402612609}
+  - component: {fileID: 8071186003628826624}
   m_Layer: 5
   m_Name: MonikaDialog_Canvas
   m_TagString: Untagged
@@ -743,7 +743,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 1847
---- !u!225 &4921024542025227084
+--- !u!225 &1038370223793117520
 CanvasGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -767,7 +767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ee805472840d5843b863535775bbe97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5017123783402612609
+--- !u!114 &8071186003628826624
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -776,24 +776,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6204152383743682136}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddcdd604a328c4ab296f048eb7b3a925, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c2a6ba42a241d94ca49e97325303f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasGroup: {fileID: 4921024542025227084}
-  useFadeEffect: 0
-  fadeInTime: 0.25
-  fadeOutTime: 0.05
+  textAnimatorPlayer: {fileID: 3977750363945055152}
   lineText: {fileID: 6204152383896333024}
-  showCharacterNameInLineView: 0
-  characterNameText: {fileID: 0}
-  useTypewriterEffect: 0
-  onCharacterTyped:
-    m_PersistentCalls:
-      m_Calls: []
-  typewriterEffectSpeed: 0
-  continueButton: {fileID: 0}
-  holdTime: 2
-  autoAdvance: 1
 --- !u!1 &6204152383896333030
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,8 +792,8 @@ GameObject:
   - component: {fileID: 6204152383896333025}
   - component: {fileID: 6204152383896333027}
   - component: {fileID: 6204152383896333024}
-  - component: {fileID: 5045732726450235020}
-  - component: {fileID: 1213492239539397212}
+  - component: {fileID: 8807531383872327083}
+  - component: {fileID: 3977750363945055152}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -930,7 +917,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &5045732726450235020
+--- !u!114 &8807531383872327083
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -946,8 +933,7 @@ MonoBehaviour:
   effectIntensityMultiplier: 50
   appearancesContainer:
     tagsFallback_Appearances: []
-    tagsFallback_Disappearances:
-    - size
+    tagsFallback_Disappearances: []
     values:
       defaults:
         sizeDuration: 0.3
@@ -1006,7 +992,7 @@ MonoBehaviour:
   useDynamicScaling: 0
   referenceFontSize: -1
   timeScale: 0
---- !u!114 &1213492239539397212
+--- !u!114 &3977750363945055152
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
