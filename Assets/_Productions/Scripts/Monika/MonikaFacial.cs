@@ -3,6 +3,7 @@ using System.Collections;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Yarn.Unity;
 using Random = UnityEngine.Random;
 
 namespace JustMonika.VR
@@ -29,6 +30,7 @@ namespace JustMonika.VR
         
         private Mesh skinnedMesh;
         private bool hasFacial;
+        private DialogueRunner dialogueRunner;
 
         private void Awake()
         {
@@ -39,6 +41,8 @@ namespace JustMonika.VR
         {
             if(autoBlink)
                 StartCoroutine(Blink());
+
+            dialogueRunner = DialogueSystem.Instance.dialogueRunner;
         }
 
         private void OnDestroy()
@@ -102,12 +106,16 @@ namespace JustMonika.VR
 
         public void StartTalking()
         {
+            if (isTalking) return;
+            
             isTalking = true;
             StartCoroutine(Talking());
         }
 
         public void StopTalking()
         {
+            if (!isTalking) return;
+            
             isTalking = false;
             skinnedMeshRenderer.SetBlendShapeWeight(talkingFacialData.settings[0].index, 0f);
         }

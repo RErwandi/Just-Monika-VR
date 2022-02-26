@@ -779,8 +779,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c2a6ba42a241d94ca49e97325303f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 1038370223793117520}
   textAnimatorPlayer: {fileID: 3977750363945055152}
   lineText: {fileID: 6204152383896333024}
+  holdTime: 1
 --- !u!1 &6204152383896333030
 GameObject:
   m_ObjectHideFlags: 0
