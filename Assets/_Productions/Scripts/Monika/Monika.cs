@@ -1,4 +1,3 @@
-using System;
 using GameLokal.Toolkit;
 
 namespace JustMonika.VR
@@ -10,11 +9,9 @@ namespace JustMonika.VR
             return false;
         }
 
-        public MonikaConversation conversation;
-
-        public void PlayConversation(ConversationData data, Action onFinish = null)
+        private void Start()
         {
-            conversation.PlayConversation(data, onFinish);
+            DialogueSystem.Instance.StartDialogue("Same_Room");
         }
     }
 }

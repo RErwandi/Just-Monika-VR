@@ -36,11 +36,14 @@ MonoBehaviour:
     - Febucci.TextAnimator.Runtime
     - Sirenix.OdinInspector.CompatibilityLayer
     - Febucci.TextAnimator.Demo.Runtime
+    - YarnSpinner.Unity
+    - CommandsInAnAssemblyDefinition
     - Sirenix.OdinInspector.CompatibilityLayer.Editor
     - Febucci.TextAnimator.Editor
     - UMotionSourceEditor
     - UMotionSourceApplication
     - Febucci.TextAnimator.Demo.Editor
+    - YarnSpinner.Unity.Editor
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1

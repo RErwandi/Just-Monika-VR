@@ -88,8 +88,9 @@ GameObject:
   - component: {fileID: 7286682403246449}
   - component: {fileID: 7286682403246448}
   - component: {fileID: 7286682403246415}
+  - component: {fileID: 1318021102671719513}
   - component: {fileID: 7286682403246414}
-  - component: {fileID: 2817361932525157258}
+  - component: {fileID: 1414156627899289748}
   m_Layer: 5
   m_Name: MonikaDialog_Canvas
   m_TagString: Untagged
@@ -179,6 +180,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 1847
+--- !u!225 &1318021102671719513
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7286682403246413}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &7286682403246414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ee805472840d5843b863535775bbe97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2817361932525157258
+--- !u!114 &1414156627899289748
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,11 +213,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 7286682403246413}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a05283e833da084419a63a95955504a5, type: 3}
+  m_Script: {fileID: 11500000, guid: ddcdd604a328c4ab296f048eb7b3a925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueText: {fileID: 7286682598202869}
-  textAnimatorPlayer: {fileID: 5104619385228858697}
+  canvasGroup: {fileID: 1318021102671719513}
+  useFadeEffect: 0
+  fadeInTime: 0.25
+  fadeOutTime: 0.05
+  lineText: {fileID: 7286682598202869}
+  showCharacterNameInLineView: 0
+  characterNameText: {fileID: 0}
+  useTypewriterEffect: 0
+  onCharacterTyped:
+    m_PersistentCalls:
+      m_Calls: []
+  typewriterEffectSpeed: 0
+  continueButton: {fileID: 5339611544054778462}
+  holdTime: 1
+  autoAdvance: 0
 --- !u!1 &7286682598202867
 GameObject:
   m_ObjectHideFlags: 0
