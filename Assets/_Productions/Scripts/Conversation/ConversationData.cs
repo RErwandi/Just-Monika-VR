@@ -5,6 +5,6 @@ namespace JustMonika.VR
 {
     public class ConversationData : ScriptableObject
     {
-        public List<Dialogue> dialogues = new List<Dialogue>();
+        public List<ConversationEvent> conversationEvents = new List<ConversationEvent>();
     }
 }

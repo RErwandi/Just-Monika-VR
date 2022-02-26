@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a62dde94e123094d80f063c1998c211, type: 3}
+  m_Name: Bad Day
+  m_EditorClassIdentifier: 
+  dialogues:
+  - face: {fileID: 0}
+    text: ...Hey, are you having a bad day or anything like that?
+  - face: {fileID: 0}
+    text: Sometimes I get frustrated that a normal day can be ruined even by really
+      small things.
+  - face: {fileID: 0}
+    text: Like if you accidentally say something in a conversation that someone doesn't
+      like.
+  - face: {fileID: 0}
+    text: Or if you start thinking about how awful of a person you used to be five
+      years ago.
+  - face: {fileID: 0}
+    text: Or if you feel worthless for putting off important work and failing to
+      get simple tasks done.
+  - face: {fileID: 0}
+    text: Or when you think about all the different people who probably hate you
+      or think you're off-putting.
+  - face: {fileID: 0}
+    text: I understand those days.
+  - face: {fileID: 0}
+    text: Just remember that the sun will shine again tomorrow.
+  - face: {fileID: 0}
+    text: Those kinds of things are as easy to forget and ignore as they are to remember.
+  - face: {fileID: 0}
+    text: And besides...
+  - face: {fileID: 0}
+    text: I don't care how many people might hate you or find you off-putting.
+  - face: {fileID: 0}
+    text: I think you're wonderful and I will always love you.
+  - face: {fileID: 0}
+    text: I hope, if nothing else, that knowing that helps you feel just a tiny bit
+      better about yourself.
+  - face: {fileID: 0}
+    text: If you're having a bad day, you can always come to me, and I'll talk to
+      you for as long as you need.

@@ -7,7 +7,7 @@ namespace JustMonika.VR
 {
     public class Classroom : MonoBehaviour
     {
-        [AssetList(Path = "_Databases/Conversations/Random Topics", AutoPopulate = true)]
+        [AssetList(Path = "_Databases/Conversations/Topics", AutoPopulate = true)]
         public List<ConversationData> randomTopics = new List<ConversationData>();
 
         private void Start()

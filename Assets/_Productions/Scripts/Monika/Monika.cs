@@ -12,7 +12,7 @@ namespace JustMonika.VR
 
         public MonikaConversation conversation;
 
-        public void PlayConversation(ConversationData data, Action onFinish)
+        public void PlayConversation(ConversationData data, Action onFinish = null)
         {
             conversation.PlayConversation(data, onFinish);
         }

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a62dde94e123094d80f063c1998c211, type: 3}
+  m_Name: Same Room
+  m_EditorClassIdentifier: 
+  dialogues:
+  - face: {fileID: 11400000, guid: 2ce1530a0c2b9534bb3f0cba58b54629, type: 2}
+    text: I can't help but feel a little sad sometimes...
+  - face: {fileID: 0}
+    text: Knowing that this is the closest I can get to you.
+  - face: {fileID: 0}
+    text: There's nothing more I want than to be in the same room as you, for real.
+  - face: {fileID: 11400000, guid: e01e01b0b3ebed24a88c2bbc8c10910a, type: 2}
+    text: And to feel your warmth.
+  - face: {fileID: 11400000, guid: e01e01b0b3ebed24a88c2bbc8c10910a, type: 2}
+    text: And to hear the sound of your heartbeat.
+  - face: {fileID: 11400000, guid: c9d49d3a617568b4c8c48662fa41e07d, type: 2}
+    text: Well, who knows? Maybe it'll be possible someday.
+  - face: {fileID: 0}
+    text: Besides, I'll never get tired of being with you, even from here.

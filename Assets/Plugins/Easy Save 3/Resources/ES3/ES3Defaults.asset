@@ -30,16 +30,16 @@ MonoBehaviour:
     serializationDepthLimit: 64
     assemblyNames:
     - Assembly-CSharp
-    - com.gamelokal.toolkit
     - Assembly-CSharp-firstpass
     - ES3
+    - com.gamelokal.toolkit
     - Febucci.TextAnimator.Runtime
     - Sirenix.OdinInspector.CompatibilityLayer
     - Febucci.TextAnimator.Demo.Runtime
     - Sirenix.OdinInspector.CompatibilityLayer.Editor
     - Febucci.TextAnimator.Editor
-    - UMotionSourceApplication
     - UMotionSourceEditor
+    - UMotionSourceApplication
     - Febucci.TextAnimator.Demo.Editor
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0

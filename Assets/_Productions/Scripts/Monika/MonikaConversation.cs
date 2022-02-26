@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace JustMonika.VR
@@ -21,13 +22,14 @@ namespace JustMonika.VR
             dialogueView.Hide();
         }
 
-        public void PlayConversation(ConversationData conversation, Action onFinish)
+        [Button]
+        public void PlayConversation(ConversationData conversation, Action onFinish = null)
         {
             currentConversation = conversation;
             iDialogue = 0;
             onConversationFinish = onFinish;
             dialogueView.Show();
-            
+
             PlayCurrentConversation();
         }
         
@@ -40,15 +42,16 @@ namespace JustMonika.VR
 
         private void PlayCurrentConversation()
         {
-            if (iDialogue >= currentConversation.dialogues.Count)
+            if (iDialogue >= currentConversation.conversationEvents.Count)
             {
                 FinishConversation();
                 return;
             }
             
-            if (currentConversation.dialogues[iDialogue] != null)
+            if (currentConversation.conversationEvents[iDialogue].dialogue != null)
             {
-                PlayDialogue(currentConversation.dialogues[iDialogue]);
+                PlayDialogue(currentConversation.conversationEvents[iDialogue].dialogue);
+                facial.StartTalking();
             }
         }
 
@@ -68,6 +71,7 @@ namespace JustMonika.VR
 
         private IEnumerator DelayConversation()
         {
+            facial.StopTalking();
             yield return new WaitForSeconds(GameSettings.Instance.autoForwardTime);
             PlayCurrentConversation();
         }

@@ -19,6 +19,13 @@ namespace JustMonika.VR
         public FacialData blinkFacialData;
         private float blinkValue;
         private bool isBlinking;
+
+        [Title("Lips Settings")]
+        public bool lipSync = true;
+        [ShowIf("lipSync")]
+        public FacialData talkingFacialData;
+        private float talkingValue;
+        private bool isTalking;
         
         private Mesh skinnedMesh;
         private bool hasFacial;
@@ -44,6 +51,11 @@ namespace JustMonika.VR
             if (isBlinking)
             {
                 skinnedMeshRenderer.SetBlendShapeWeight(blinkFacialData.settings[0].index, blinkValue);
+            }
+
+            if (isTalking)
+            {
+                skinnedMeshRenderer.SetBlendShapeWeight(talkingFacialData.settings[0].index, talkingValue);
             }
         }
 
@@ -86,6 +98,28 @@ namespace JustMonika.VR
             }
 
             hasFacial = false;
+        }
+
+        public void StartTalking()
+        {
+            isTalking = true;
+            StartCoroutine(Talking());
+        }
+
+        public void StopTalking()
+        {
+            isTalking = false;
+            skinnedMeshRenderer.SetBlendShapeWeight(talkingFacialData.settings[0].index, 0f);
+        }
+        
+        private IEnumerator Talking()
+        {
+            DOTween.To(()=> talkingValue, x=> talkingValue = x, talkingFacialData.settings[0].value, 0.1f);
+            yield return new WaitForSeconds(0.1f);
+            DOTween.To(()=> talkingValue, x=> talkingValue = x, 0f, 0.1f);
+            yield return new WaitForSeconds(0.1f);
+            
+            StartCoroutine(Talking());
         }
     }
 }

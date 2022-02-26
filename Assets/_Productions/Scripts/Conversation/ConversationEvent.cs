@@ -1,22 +1,18 @@
-using GameLokal.Toolkit;
+using Sirenix.OdinInspector;
 
 namespace JustMonika.VR
 {
-    public struct ConversationEvent
+    [System.Serializable]
+    public class ConversationEvent
     {
-        public ConversationData Data;
-
-        public ConversationEvent(ConversationData newData)
-        {
-            Data = newData;
-        }
-
-        private static ConversationEvent _event;
-
-        public static void Trigger(ConversationData newData)
-        {
-            _event.Data = newData;
-            EventManager.TriggerEvent(_event);
-        }
+        public ConversationType type;
+        
+        // Dialogue
+        [ShowIf("type", ConversationType.Dialogue)]
+        public Dialogue dialogue;
+        
+        // Option
+        [ShowIf("type", ConversationType.Option)]
+        public DialogueOption option;
     }
 }
