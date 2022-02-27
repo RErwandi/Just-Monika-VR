@@ -18,6 +18,11 @@ namespace JustMonika.VR
 
         private void Start()
         {
+            Invoke("StartInitialDialogue", 30f);
+        }
+
+        private void StartInitialDialogue()
+        {
             DialogueSystem.Instance.StartDialogue("Greeting_Goodday");
         }
 
