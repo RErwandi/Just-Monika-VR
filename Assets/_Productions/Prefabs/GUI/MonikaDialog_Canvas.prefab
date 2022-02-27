@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1873212924892617170}
   - component: {fileID: 1873212924892617197}
   - component: {fileID: 4723825983965259495}
-  - component: {fileID: 1873212924892617196}
+  - component: {fileID: 5037369526658690583}
   - component: {fileID: 4604352737913397175}
   m_Layer: 5
   m_Name: MonikaDialog_Canvas
@@ -115,7 +115,7 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &1873212924892617196
+--- !u!114 &5037369526658690583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

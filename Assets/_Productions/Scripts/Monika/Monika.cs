@@ -18,7 +18,7 @@ namespace JustMonika.VR
 
         private void Start()
         {
-            Invoke("StartInitialDialogue", 30f);
+            Invoke("StartInitialDialogue", 10f);
         }
 
         private void StartInitialDialogue()

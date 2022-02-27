@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 266777399797028377}
   - component: {fileID: 2604192818596655429}
   - component: {fileID: 980032791648273850}
-  - component: {fileID: 2453206023755997203}
+  - component: {fileID: 5582290878540625351}
   - component: {fileID: 1298691918300628091}
   m_Layer: 5
   m_Name: MonikaOption_Canvas
@@ -297,7 +297,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &2604192818596655429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,7 +327,7 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &2453206023755997203
+--- !u!114 &5582290878540625351
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

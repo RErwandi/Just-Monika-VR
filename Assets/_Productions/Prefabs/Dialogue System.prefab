@@ -214,10 +214,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1873212924892617196, guid: a0648747d3407ad499b1dee5dc6abe33,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1873212924892617199, guid: a0648747d3407ad499b1dee5dc6abe33,
         type: 3}
       propertyPath: m_Name
       value: MonikaDialog_Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873212924892617199, guid: a0648747d3407ad499b1dee5dc6abe33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0648747d3407ad499b1dee5dc6abe33, type: 3}
@@ -246,6 +256,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3584307758535624605}
     m_Modifications:
+    - target: {fileID: 266777399797028377, guid: 157135d57f35b20449062041c85eca7e,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 315002032107630201, guid: 157135d57f35b20449062041c85eca7e,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -371,10 +386,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2453206023755997203, guid: 157135d57f35b20449062041c85eca7e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6300668940990825261, guid: 157135d57f35b20449062041c85eca7e,
         type: 3}
       propertyPath: m_Name
       value: MonikaOption_Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6300668940990825261, guid: 157135d57f35b20449062041c85eca7e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7773992533918108565, guid: 157135d57f35b20449062041c85eca7e,
         type: 3}
