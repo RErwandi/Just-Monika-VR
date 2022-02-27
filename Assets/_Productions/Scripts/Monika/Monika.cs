@@ -18,7 +18,7 @@ namespace JustMonika.VR
 
         private void Start()
         {
-            DialogueSystem.Instance.StartDialogue("Same_Room");
+            DialogueSystem.Instance.StartDialogue("Greeting_Goodday");
         }
 
         public void StartTalking()

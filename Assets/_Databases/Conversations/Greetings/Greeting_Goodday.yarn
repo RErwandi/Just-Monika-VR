@@ -1,0 +1,18 @@
+﻿title: Greeting_Goodday
+tags:
+---
+Hello again, [player]. How are you doing?
+Are you having a good day today?
+
+-> Yes
+	I'm really glad you are, [player].
+	It makes me feel so much better knowing that you're happy.
+	I'll try my best to make sure it stays that way, I promise.
+-> No
+	Oh...
+	Well, don't worry, [player]. I'm always here for you.
+	We can talk all day about your problems, if you want to.
+	I want to try and make sure you're always happy.
+	Because that's what makes me happy.
+	I'll be sure to try my best to cheer you up, I promise.
+===
