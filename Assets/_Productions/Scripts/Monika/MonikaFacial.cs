@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -11,6 +12,16 @@ namespace JustMonika.VR
     public class MonikaFacial : MonoBehaviour
     {
         public SkinnedMeshRenderer skinnedMeshRenderer;
+
+        [Title("Facial Database")]
+        [AssetList(Path = "_Databases/Facial Emotion/Eyes", AutoPopulate = true)]
+        public List<FacialData> availableEyes = new List<FacialData>();
+        [AssetList(Path = "_Databases/Facial Emotion/Eyebrows", AutoPopulate = true)]
+        public List<FacialData> availableEyebrows = new List<FacialData>();
+        [AssetList(Path = "_Databases/Facial Emotion/Mouth", AutoPopulate = true)]
+        public List<FacialData> availableMouth = new List<FacialData>();
+        [AssetList(Path = "_Databases/Facial Emotion/Blush", AutoPopulate = true)]
+        public List<FacialData> availableBlush = new List<FacialData>();
 
         [Title("Blink Settings")]
         public bool autoBlink = true;
@@ -82,11 +93,26 @@ namespace JustMonika.VR
             StartCoroutine(Blink());
         }
 
-        public void SetFacial(FacialData facialData)
+        public void SetFacial(FacialData eyes, FacialData eyebrows, FacialData mouth, FacialData blush)
         {
             ResetFacial();
             
-            foreach (var facial in facialData.settings)
+            foreach (var facial in eyes.settings)
+            {
+                skinnedMeshRenderer.SetBlendShapeWeight(facial.index, facial.value);
+            }
+            
+            foreach (var facial in eyebrows.settings)
+            {
+                skinnedMeshRenderer.SetBlendShapeWeight(facial.index, facial.value);
+            }
+            
+            foreach (var facial in mouth.settings)
+            {
+                skinnedMeshRenderer.SetBlendShapeWeight(facial.index, facial.value);
+            }
+            
+            foreach (var facial in blush.settings)
             {
                 skinnedMeshRenderer.SetBlendShapeWeight(facial.index, facial.value);
             }

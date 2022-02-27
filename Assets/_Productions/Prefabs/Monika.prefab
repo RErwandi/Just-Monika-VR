@@ -59,6 +59,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skinnedMeshRenderer: {fileID: 7757435338285599901}
+  availableEyes:
+  - {fileID: 11400000, guid: 9efcd492b7e009b42b99bbf38ae951ba, type: 2}
+  - {fileID: 11400000, guid: 0eaf2466c9aa6db41bfcbda496a188d5, type: 2}
+  - {fileID: 11400000, guid: 525bb98f0396bb04784f53904e603d4e, type: 2}
+  - {fileID: 11400000, guid: cf20ac9c69684e643a981ef4bbae87a2, type: 2}
+  - {fileID: 11400000, guid: 2e320e86607f3ba4a82ed3f1fcd8cabb, type: 2}
+  - {fileID: 11400000, guid: 0ca53daf3a9cf894eb78ad6113f57da5, type: 2}
+  - {fileID: 11400000, guid: 044306a915068db47981f241a88f2784, type: 2}
+  - {fileID: 11400000, guid: e1b9c777267f1d94ca901df0a3d03251, type: 2}
+  availableEyebrows:
+  - {fileID: 11400000, guid: 939ba2bbf2a66ef4d9cccab55b3ee2e8, type: 2}
+  - {fileID: 11400000, guid: 5f376c44469a1a1468f13d3497483a5d, type: 2}
+  - {fileID: 11400000, guid: 0c74a284e5fd8f04fa7f78f3d7c845fe, type: 2}
+  - {fileID: 11400000, guid: 3bd5669d908a34742905c0eebb282240, type: 2}
+  - {fileID: 11400000, guid: bf6e0eb4b5622094f8edc254d5b14e8d, type: 2}
+  availableMouth:
+  - {fileID: 11400000, guid: 1164047d1d46dd94ca3885ebe0479171, type: 2}
+  - {fileID: 11400000, guid: 4295bd4e79e769d4980124b7c904c4e1, type: 2}
+  - {fileID: 11400000, guid: 6d5654786d1b61249bb8e537bfbdabce, type: 2}
+  - {fileID: 11400000, guid: 1a470684527be644295bf4a507c7db2d, type: 2}
+  - {fileID: 11400000, guid: c9cdc8c595a9b1c49becbea216b31ac7, type: 2}
+  availableBlush:
+  - {fileID: 11400000, guid: b2bf883b0e28a8344a4baf700f22fa9d, type: 2}
+  - {fileID: 11400000, guid: 272a2e76456cf344bbd09b04a48fdc21, type: 2}
+  - {fileID: 11400000, guid: 0017d2fb66a9fe34db8e0f2cf18ca89f, type: 2}
+  - {fileID: 11400000, guid: 2fc1a431316de2c4a9f484e311420ef2, type: 2}
+  - {fileID: 11400000, guid: 3c2e0e00c8cc1f54985ab5e286ed4ce9, type: 2}
   autoBlink: 1
   autoBlinkInterval: {x: 1, y: 10}
   blinkFacialData: {fileID: 11400000, guid: 22072cc74e096b34aa5464a25ffc1bf7, type: 2}

@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 987f76fac8d3b644a86dbe5874a5ad6d, type: 3}
-  m_Name: (q)Sad_Eyes_Closed
+  m_Name: Wide
   m_EditorClassIdentifier: 
   settings:
-  - index: 0
+  - index: 9
     value: 100
-  - index: 28
-    value: 60
-  - index: 61
-    value: 100
+  - index: 48
+    value: 50
