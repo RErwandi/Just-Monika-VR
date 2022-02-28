@@ -197,10 +197,10 @@ namespace JustMonika.VR
         
         private IEnumerator Talking()
         {
-            DOTween.To(()=> talkingValue, x=> talkingValue = x, talkingFacialData.settings[0].value, 0.1f);
-            yield return new WaitForSeconds(0.1f);
+            DOTween.To(()=> talkingValue, x=> talkingValue = x, talkingFacialData.settings[0].value, 0.3f);
+            yield return new WaitForSeconds(0.3f);
             DOTween.To(()=> talkingValue, x=> talkingValue = x, 0f, 0.1f);
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.3f);
             
             StartCoroutine(Talking());
         }
