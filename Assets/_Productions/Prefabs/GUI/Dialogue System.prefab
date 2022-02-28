@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yarnProject: {fileID: 7545569452688597077, guid: 1eaee3f51741f3a41a26f11d808c0ae9,
+  yarnProject: {fileID: 7545569452688597077, guid: fbdf892d72c7a27479b62cccc5b5926f,
     type: 3}
   _variableStorage: {fileID: 0}
   dialogueViews:
