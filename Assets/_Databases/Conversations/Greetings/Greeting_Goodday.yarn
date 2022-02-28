@@ -1,7 +1,7 @@
 ﻿title: Greeting_Goodday
 tags:
 ---
-Hello again, [player]. How are you doing?
+Hello again, {string($player)}. How are you doing?
 <<set_eyes Closed_Happy>>
 Are you having a good day today?
 
