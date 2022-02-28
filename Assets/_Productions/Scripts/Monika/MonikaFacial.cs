@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -42,6 +43,11 @@ namespace JustMonika.VR
         private Mesh skinnedMesh;
         private bool hasFacial;
         private DialogueRunner dialogueRunner;
+
+        private FacialData lastEyes;
+        private FacialData lastEyebrows;
+        private FacialData lastMouth;
+        private FacialData lastBlush;
 
         private void Awake()
         {
@@ -93,31 +99,74 @@ namespace JustMonika.VR
             StartCoroutine(Blink());
         }
 
-        public void SetFacial(FacialData eyes, FacialData eyebrows, FacialData mouth, FacialData blush)
+        public void SetFacial(string eyes, string eyebrows, string mouth, string blush)
         {
             ResetFacial();
+
+            SetEyes(eyes);
+            SetEyebrows(eyebrows);
+            SetMouth(mouth);
+            SetBlush(blush);
             
-            foreach (var facial in eyes.settings)
-            {
-                skinnedMeshRenderer.SetBlendShapeWeight(facial.index, facial.value);
-            }
+            hasFacial = true;
+        }
+
+        public void SetEyes(string eyes)
+        {
+            ResetFacialBlendShape(lastEyes);
             
-            foreach (var facial in eyebrows.settings)
-            {
-                skinnedMeshRenderer.SetBlendShapeWeight(facial.index, facial.value);
-            }
+            var eyesData = GetEyes(eyes);
+            lastEyes = eyesData;
+            SetFacialBlendShape(eyesData);
+        }
+        
+        public void SetEyebrows(string eyebrows)
+        {
+            ResetFacialBlendShape(lastEyebrows);
             
-            foreach (var facial in mouth.settings)
-            {
-                skinnedMeshRenderer.SetBlendShapeWeight(facial.index, facial.value);
-            }
+            var eyebrowsData = GetEyebrows(eyebrows);
+            lastEyebrows = eyebrowsData;
+            SetFacialBlendShape(eyebrowsData);
+        }
+
+        public void SetMouth(string mouth)
+        {
+            ResetFacialBlendShape(lastMouth);
             
-            foreach (var facial in blush.settings)
+            var mouthData = GetMouth(mouth);
+            lastMouth = mouthData;
+            SetFacialBlendShape(mouthData);
+        }
+
+        public void SetBlush(string blush)
+        {
+            ResetFacialBlendShape(lastBlush);
+            
+            var blushData = GetBlush(blush);
+            lastBlush = blushData;
+            SetFacialBlendShape(blushData);
+        }
+
+        private void SetFacialBlendShape(FacialData data)
+        {
+            if (data == null) return;
+            
+            foreach (var facial in data.settings)
             {
                 skinnedMeshRenderer.SetBlendShapeWeight(facial.index, facial.value);
             }
 
             hasFacial = true;
+        }
+
+        private void ResetFacialBlendShape(FacialData data)
+        {
+            if (data == null) return;
+            
+            foreach (var facial in data.settings)
+            {
+                skinnedMeshRenderer.SetBlendShapeWeight(facial.index, 0f);
+            }
         }
 
         public void ResetFacial()
@@ -154,6 +203,26 @@ namespace JustMonika.VR
             yield return new WaitForSeconds(0.1f);
             
             StartCoroutine(Talking());
+        }
+
+        private FacialData GetEyes(string eyes)
+        {
+            return availableEyes.FirstOrDefault(available => available.name == eyes);
+        }
+        
+        private FacialData GetEyebrows(string eyebrows)
+        {
+            return availableEyebrows.FirstOrDefault(available => available.name == eyebrows);
+        }
+        
+        private FacialData GetMouth(string mouth)
+        {
+            return availableMouth.FirstOrDefault(available => available.name == mouth);
+        }
+        
+        private FacialData GetBlush(string blush)
+        {
+            return availableBlush.FirstOrDefault(available => available.name == blush);
         }
     }
 }

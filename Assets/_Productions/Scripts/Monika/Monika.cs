@@ -10,6 +10,7 @@ namespace JustMonika.VR
         }
 
         private MonikaFacial facial;
+        public MonikaFacial Facial => facial;
 
         protected override void Awake()
         {
@@ -24,16 +25,6 @@ namespace JustMonika.VR
         private void StartInitialDialogue()
         {
             DialogueSystem.Instance.StartDialogue("Greeting_Goodday");
-        }
-
-        public void StartTalking()
-        {
-            facial.StartTalking();
-        }
-
-        public void StopTalking()
-        {
-            facial.StopTalking();
         }
     }
 }

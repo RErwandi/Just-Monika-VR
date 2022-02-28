@@ -33,7 +33,7 @@ namespace JustMonika.VR
             ShowCanvas();
             lineText.text = dialogueLine.TextWithoutCharacterName.Text;
             onLineFinished = onDialogueLineFinished;
-            Monika.Instance.StartTalking();
+            Monika.Instance.Facial.StartTalking();
         }
         
         public override void DismissLine(Action onDismissalComplete)
@@ -61,7 +61,7 @@ namespace JustMonika.VR
 
         private IEnumerator HoldAdvance()
         {
-            Monika.Instance.StopTalking();
+            Monika.Instance.Facial.StopTalking();
             yield return new WaitForSeconds(holdTime);
             onLineFinished?.Invoke();
         }
