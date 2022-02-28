@@ -7,12 +7,17 @@ namespace JustMonika.VR
     {
         [SerializeField] private GamePersistence gamePersistence;
         public static GamePersistence GamePersistence => Instance.gamePersistence;
+
+        [SerializeField] private MonikaVariableStorage variableStorage;
+        public static MonikaVariableStorage VariableStorage => Instance.variableStorage;
         
         private void Start()
         {
             InitializeAllPersistence();
+            variableStorage.Initialize();
             
             SaveLoadManager.Instance.Load();
+            gamePersistence.SendToVariableStorage();
         }
         
         private void InitializeAllPersistence()

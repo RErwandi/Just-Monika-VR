@@ -4,12 +4,12 @@ namespace JustMonika.VR
     public class GameState
     {
         public string playerName;
-        public int monikaAffection;
+        public float monikaAffection;
 
         public GameState()
         {
             playerName = "Player";
-            monikaAffection = 0;
+            monikaAffection = 0f;
         }
     }
 }

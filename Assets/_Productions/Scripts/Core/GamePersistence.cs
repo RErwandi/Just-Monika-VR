@@ -31,6 +31,13 @@ namespace JustMonika.VR
         {
             var loaded = (GameState) generic;
             gameState = loaded;
+            
+        }
+        
+        public void SendToVariableStorage()
+        {
+            Blackboard.VariableStorage.SetValue(Constants.VAR_PLAYER_NAME, gameState.playerName);
+            Blackboard.VariableStorage.SetValue(Constants.VAR_MONIKA_AFFECTION, gameState.monikaAffection);
         }
     }
 }
