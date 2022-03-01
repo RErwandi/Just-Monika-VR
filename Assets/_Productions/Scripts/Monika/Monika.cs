@@ -16,15 +16,5 @@ namespace JustMonika.VR
         {
             facial = GetComponent<MonikaFacial>();
         }
-
-        private void Start()
-        {
-            Invoke("StartInitialDialogue", 10f);
-        }
-
-        private void StartInitialDialogue()
-        {
-            DialogueSystem.Instance.StartDialogue("Greeting_Goodday");
-        }
     }
 }
