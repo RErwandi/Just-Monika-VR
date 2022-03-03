@@ -12,6 +12,23 @@ namespace JustMonika.VR
         private MonikaFacial facial;
         public MonikaFacial Facial => facial;
 
+        public MonikaAffection Affection
+        {
+            get
+            {
+                var currentAffection = Blackboard.GamePersistence.Affection;
+                foreach (var affectionSetting in GameConfig.Instance.affectionSettings)
+                {
+                    if (currentAffection >= affectionSetting.reqAffection)
+                    {
+                        return affectionSetting.affection;
+                    }
+                }
+
+                return MonikaAffection.Normal;
+            }
+        }
+
         protected override void Awake()
         {
             facial = GetComponent<MonikaFacial>();

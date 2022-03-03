@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8527f03c48903484abc8b878471f225f, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: 
+  affectionSettings:
+  - reqAffection: 1000
+    affection: 0
+  - reqAffection: 400
+    affection: 6
+  - reqAffection: 100
+    affection: 5
+  - reqAffection: 30
+    affection: 4
+  - reqAffection: 0
+    affection: 3
+  - reqAffection: -30
+    affection: 2
+  - reqAffection: -75
+    affection: 1
+  - reqAffection: -100
+    affection: 0

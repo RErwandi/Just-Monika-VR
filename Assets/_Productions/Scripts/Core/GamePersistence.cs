@@ -6,6 +6,7 @@ namespace JustMonika.VR
     public class GamePersistence : BasePersistence, IGameSave
     {
         public GameState gameState;
+        public float Affection => gameState.monikaAffection;
 
         public override string GetUniqueName()
         {
