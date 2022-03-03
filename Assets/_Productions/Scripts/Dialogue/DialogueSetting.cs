@@ -6,8 +6,6 @@ namespace JustMonika.VR
 {
     public class DialogueSetting : ScriptableObject
     {
-        // Yarn script title that will run.
-        public string scriptTitle;
         // Name of text shown in the button that will trigger this topic.
         public string promptName;
         // Category of this dialogue

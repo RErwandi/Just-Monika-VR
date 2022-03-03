@@ -1,13 +1,36 @@
+using System;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace JustMonika.VR
 {
     public class Classroom : MonoBehaviour
     {
         [AssetList(Path = "/_Databases/Dialogues/Topics", AutoPopulate = true)]
-        public List<DialogueSetting> randomTopics = new List<DialogueSetting>();
+        public List<DialogueSetting> topics = new List<DialogueSetting>();
+
+        private void Start()
+        {
+            Invoke("StartRandomTopic", Blackboard.GamePersistence.RandomTopicInterval);
+        }
+
+        private void StartRandomTopic()
+        {
+            var chosenTopic = GetRandomTopics();
+            StartTopicDialogue(chosenTopic);
+        }
+
+        private void StartTopicDialogue(DialogueSetting dialogueSetting)
+        {
+            DialogueSystem.Instance.StartDialogue(dialogueSetting.name, OnDialogueFinish);
+        }
+
+        private void OnDialogueFinish()
+        {
+            Invoke("StartRandomTopic", Blackboard.GamePersistence.RandomTopicInterval);
+        }
 
         [Button]
         public DialogueSetting GetRandomTopics()
@@ -15,8 +38,8 @@ namespace JustMonika.VR
             DialogueSetting chosenTopic;
             do
             {
-                var r = Random.Range(0, randomTopics.Count);
-                chosenTopic = randomTopics[r];
+                var r = Random.Range(0, topics.Count);
+                chosenTopic = topics[r];
             } while (!ConditionApproved(chosenTopic));
 
             Debug.Log($"Chosen topic is {chosenTopic.name}");

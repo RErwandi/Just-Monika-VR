@@ -7,6 +7,7 @@ namespace JustMonika.VR
     {
         public GameState gameState;
         public float Affection => gameState.monikaAffection;
+        public float RandomTopicInterval => gameState.randomTopicInterval;
 
         public override string GetUniqueName()
         {

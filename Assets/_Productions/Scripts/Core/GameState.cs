@@ -5,6 +5,7 @@ namespace JustMonika.VR
     {
         public string playerName;
         public float monikaAffection;
+        public float randomTopicInterval = 15f;
 
         public GameState()
         {
