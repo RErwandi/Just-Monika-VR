@@ -12,9 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e64d0e3bbb042498316f34e219f862, type: 3}
   m_Name: Confidence
   m_EditorClassIdentifier: 
-  scriptTitle: Confidence
   promptName: Faking Confidence
   category: Advice
   random: 1
   pool: 0
-  conditional: []
+  conditional:
+  - rulesType: 0
+    variableName: 
+    minimumAffectionLevel: 0
+    startDate: 01-01-1999
+    endDate: 30-12-2999
+  - rulesType: 1
+    variableName: 
+    minimumAffectionLevel: 0
+    startDate: 01-01-1999
+    endDate: 30-12-2999
+  - rulesType: 2
+    variableName: 
+    minimumAffectionLevel: 0
+    startDate: 01-01-1999
+    endDate: 30-12-2999
