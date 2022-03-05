@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4190419466621531540}
-  - component: {fileID: 4190419466621531541}
+  - component: {fileID: 143993441825098840}
   m_Layer: 0
   m_Name: Game Persistence
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 4190419466719644406}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4190419466621531541
+--- !u!114 &143993441825098840
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,8 +44,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameState:
-    playerName: 
+    playerName: Player
     monikaAffection: 0
+    randomTopicInterval: 15
+    repeatTopics: 0
+    visitedTopics: []
 --- !u!1 &4190419466719644401
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e292bc111c41de74e8eca1d8b1dd075a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gamePersistence: {fileID: 4190419466621531541}
+  gamePersistence: {fileID: 143993441825098840}
   variableStorage: {fileID: 4740322477084716142}
 --- !u!1 &7868761222160140061
 GameObject:

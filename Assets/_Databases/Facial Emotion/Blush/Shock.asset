@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Shock
   m_EditorClassIdentifier: 
   settings:
-  - index: 78
+  - index: 76
     value: 100

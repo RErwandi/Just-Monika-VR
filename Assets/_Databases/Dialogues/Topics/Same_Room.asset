@@ -16,4 +16,5 @@ MonoBehaviour:
   category: You
   random: 1
   pool: 0
+  priority: 1
   conditional: []

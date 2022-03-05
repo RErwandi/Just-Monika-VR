@@ -17,6 +17,8 @@ namespace JustMonika.VR
         // TRUE: will allow this topic to appear in the Unseen menu as well as they "Hey Monika" menu
         // This should be used for topics where player initiates the conversation.
         public bool pool;
+        // 0 is default priority, if you want this topic to be on the top of queue, put higher number than 0
+        public int priority;
         // This topic will only be allowed if every variable in conditional is met.
         public List<DialogueCondition> conditional = new List<DialogueCondition>();
     }

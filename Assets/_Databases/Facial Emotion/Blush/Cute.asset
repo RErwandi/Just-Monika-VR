@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Cute
   m_EditorClassIdentifier: 
   settings:
-  - index: 75
+  - index: 73
     value: 100

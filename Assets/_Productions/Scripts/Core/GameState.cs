@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace JustMonika.VR
 {
     [System.Serializable]
@@ -6,6 +8,9 @@ namespace JustMonika.VR
         public string playerName;
         public float monikaAffection;
         public float randomTopicInterval = 15f;
+        public bool repeatTopics;
+
+        public List<string> visitedTopics = new List<string>();
 
         public GameState()
         {

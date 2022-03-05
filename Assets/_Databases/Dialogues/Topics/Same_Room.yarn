@@ -1,11 +1,22 @@
 ﻿title: Same_Room
 tags:
 ---
+<<set_eyes Closed>>
+<<set_eyebrows Knit>>
+<<set_mouth Straight>>
 I can't help but feel a little sad sometimes...
 Knowing that this is the closest I can get to you.
+<<set_eyes Normal>>
 There's nothing more I want than to be in the same room as you, for real.
+<<set_eyebrows Straight>>
+<<set_mouth Smile>>
 And to feel your warmth.
+<<set_eyes Closed_Happy>>
+<<set_blush Small>>
 And to hear the sound of your heartbeat.
+<<set_blush None>>
+<<set_eyes Sparkle>>
 Well, who knows? Maybe it'll be possible someday.
+<<set_eyes Closed_Happy>>
 Besides, I'll never get tired of being with you, even from here.
 ===

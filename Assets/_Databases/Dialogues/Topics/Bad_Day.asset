@@ -16,4 +16,10 @@ MonoBehaviour:
   category: Life
   random: 1
   pool: 0
-  conditional: []
+  priority: 0
+  conditional:
+  - rulesType: 2
+    variableName: 
+    minimumAffectionLevel: 0
+    startDate: 01-01-1999
+    endDate: 30-12-2999

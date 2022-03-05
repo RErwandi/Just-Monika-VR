@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using GameLokal.Toolkit;
 
 namespace JustMonika.VR
@@ -8,6 +9,9 @@ namespace JustMonika.VR
         public GameState gameState;
         public float Affection => gameState.monikaAffection;
         public float RandomTopicInterval => gameState.randomTopicInterval;
+        public List<string> VisitedTopics => gameState.visitedTopics;
+
+        public bool RepeatTopics => gameState.repeatTopics;
 
         public override string GetUniqueName()
         {
@@ -40,6 +44,14 @@ namespace JustMonika.VR
         {
             Blackboard.VariableStorage.SetValue(Constants.VAR_PLAYER_NAME, gameState.playerName);
             Blackboard.VariableStorage.SetValue(Constants.VAR_MONIKA_AFFECTION, gameState.monikaAffection);
+        }
+
+        public void AddVisitedTopic(string topicName)
+        {
+            if (!VisitedTopics.Contains(topicName))
+            {
+                VisitedTopics.Add(topicName);
+            }
         }
     }
 }
