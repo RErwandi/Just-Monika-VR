@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using GameLokal.Toolkit;
@@ -10,9 +9,6 @@ namespace JustMonika.VR
 {
     public class Classroom : MonoBehaviour
     {
-        [AssetList(Path = "/_Databases/Dialogues/Topics", AutoPopulate = true)]
-        public List<DialogueSetting> topics = new List<DialogueSetting>();
-
         [ShowInInspector, ReadOnly]
         private List<DialogueSetting> topicsQueue = new List<DialogueSetting>();
 
@@ -24,7 +20,7 @@ namespace JustMonika.VR
 
         private void QueueTopics()
         {
-            topicsQueue = topics.ToList();
+            topicsQueue = Database.Instance.topics.ToList();
             topicsQueue.Shuffle();
             topicsQueue.Sort((a, b) => a.priority.CompareTo(b.priority));
 
@@ -72,8 +68,8 @@ namespace JustMonika.VR
             DialogueSetting chosenTopic;
             do
             {
-                var r = Random.Range(0, topics.Count);
-                chosenTopic = topics[r];
+                var r = Random.Range(0, Database.Topics.Count);
+                chosenTopic = Database.GetTopic(r);
             } while (!ConditionApproved(chosenTopic));
 
             Debug.Log($"Chosen topic is {chosenTopic.name}");
