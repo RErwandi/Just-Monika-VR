@@ -26,7 +26,7 @@ namespace JustMonika.VR
         {
             topicsQueue = topics.ToList();
             topicsQueue.Shuffle();
-            topicsQueue.Sort((a, b) => b.priority.CompareTo(a.priority));
+            topicsQueue.Sort((a, b) => a.priority.CompareTo(b.priority));
 
             var iToBeDeleted = new List<int>();
             

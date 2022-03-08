@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e64d0e3bbb042498316f34e219f862, type: 3}
   m_Name: Sleep
   m_EditorClassIdentifier: 
+  conditional: []
+  priority: 1000
   promptName: Sleep
   category: Advice
   random: 1
   pool: 0
-  conditional: []

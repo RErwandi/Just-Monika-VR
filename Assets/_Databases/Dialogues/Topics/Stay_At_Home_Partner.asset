@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e64d0e3bbb042498316f34e219f862, type: 3}
   m_Name: Stay_At_Home_Partner
   m_EditorClassIdentifier: 
+  conditional: []
+  priority: 1000
   promptName: Stay At Home Partner
   category: Life
   random: 1
   pool: 0
-  conditional: []

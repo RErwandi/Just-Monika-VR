@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e64d0e3bbb042498316f34e219f862, type: 3}
   m_Name: Same_Room
   m_EditorClassIdentifier: 
+  conditional: []
+  priority: 1000
   promptName: In the same room
   category: You
   random: 1
   pool: 0
-  priority: 1
-  conditional: []
