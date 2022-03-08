@@ -1,0 +1,7 @@
+﻿title: Greeting_Visit2
+tags:
+---
+Thanks for spending so much time with me, {string($player)}.
+Every minute I spend with you is like being in heaven!
+I hope that didn't sound too cheesy, ehehe~
+===

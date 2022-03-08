@@ -1,0 +1,7 @@
+﻿title: Greeting_Visit
+tags:
+---
+There you are {string($player)}, it's so nice of you to visit.
+You're always so thoughtful.
+Thanks for spending so much time with me~
+===
