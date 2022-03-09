@@ -14,8 +14,12 @@ namespace JustMonika.VR
         public MonikaAffection minimumAffectionLevel;
 
         [ShowIf("rulesType", DialogueRulesType.DateRange)]
-        public string startDate = "01-01-1999";
+        public int day = 1;
         [ShowIf("rulesType", DialogueRulesType.DateRange)]
-        public string endDate = "30-12-2999";
+        public int month = 1;
+        [ShowIf("rulesType", DialogueRulesType.DateRange)]
+        public bool useYear;
+        [ShowIf("rulesType", DialogueRulesType.DateRange)]
+        public int year = 2022;
     }
 }

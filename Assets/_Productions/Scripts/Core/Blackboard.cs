@@ -1,3 +1,4 @@
+using System;
 using GameLokal.Toolkit;
 using UnityEngine;
 
@@ -10,6 +11,9 @@ namespace JustMonika.VR
 
         [SerializeField] private MonikaVariableStorage variableStorage;
         public static MonikaVariableStorage VariableStorage => Instance.variableStorage;
+
+        [SerializeField] private TimeManager timeManager;
+        public static TimeManager Time => Instance.timeManager;
         
         private void Start()
         {

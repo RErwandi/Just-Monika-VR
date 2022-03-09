@@ -29,7 +29,7 @@ namespace JustMonika.VR
             {
                 var topic = topicsQueue[i];
 
-                if (!topic.IsValidCondition())
+                if (!topic.HasValidCondition())
                 {
                     iToBeDeleted.Add(i);
                 } /*else if (!Blackboard.GamePersistence.RepeatTopics &&

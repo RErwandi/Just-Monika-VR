@@ -1,12 +1,10 @@
-using System;
 using System.Linq;
-using UnityEngine;
 
 namespace JustMonika.VR
 {
     public static class DialogueExtensions
     {
-        public static bool IsValidCondition(this BaseDialogueData dialogue)
+        public static bool HasValidCondition(this BaseDialogueData dialogue)
         {
             foreach (var condition in dialogue.conditional)
             {
@@ -14,9 +12,8 @@ namespace JustMonika.VR
                 {
                     case DialogueRulesType.HasVariable when !IsHasVariableValid(condition.variableName):
                     case DialogueRulesType.AffectionLevel when !IsAffectionValid(condition.minimumAffectionLevel):
+                    case DialogueRulesType.DateRange when !IsDateRangeValid(condition.day, condition.month, condition.year, condition.useYear):
                         return false;
-                    case DialogueRulesType.DateRange:
-                        break;
                 }
             }
 
@@ -38,6 +35,23 @@ namespace JustMonika.VR
             }
 
             return Blackboard.GamePersistence.Affection >= neededAffection;
+        }
+
+        private static bool IsDateRangeValid(int day, int month, int year, bool useYear = false)
+        {
+            if (useYear)
+            {
+                if (Blackboard.Time.Day == day && Blackboard.Time.Month == month && Blackboard.Time.Year == year)
+                    return true;
+            }
+            else
+            {
+                if (Blackboard.Time.Day == day && Blackboard.Time.Month == month)
+                    return true;
+            }
+            
+
+            return false;
         }
     }
 }
