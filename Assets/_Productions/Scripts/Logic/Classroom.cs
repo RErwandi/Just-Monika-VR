@@ -25,17 +25,18 @@ namespace JustMonika.VR
             topicsQueue.Sort((a, b) => a.priority.CompareTo(b.priority));
 
             var iToBeDeleted = new List<int>();
-            
-            if (!Blackboard.GamePersistence.RepeatTopics)
+            for (int i = 0; i < topicsQueue.Count; i++)
             {
-                for(int i = 0; i < topicsQueue.Count; i++)
+                var topic = topicsQueue[i];
+
+                if (!topic.IsValidCondition())
                 {
-                    var topic = topicsQueue[i];
-                    if (Blackboard.GamePersistence.VisitedTopics.Contains(topic.name))
-                    {
-                        iToBeDeleted.Add(i);
-                    }
-                }
+                    iToBeDeleted.Add(i);
+                } /*else if (!Blackboard.GamePersistence.RepeatTopics &&
+                           Blackboard.GamePersistence.VisitedTopics.Contains(topic.name))
+                {
+                    iToBeDeleted.Add(i);
+                }*/
             }
 
             foreach (var i in iToBeDeleted)

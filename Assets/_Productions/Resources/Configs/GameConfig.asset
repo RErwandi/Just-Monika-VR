@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   affectionSettings:
   - reqAffection: 1000
-    affection: 0
+    affection: 7
   - reqAffection: 400
     affection: 6
   - reqAffection: 100
