@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7531919729048708117}
   - component: {fileID: 3853906318500010697}
   - component: {fileID: 3722252033702218803}
+  - component: {fileID: 4673454560750106563}
   m_Layer: 0
   m_Name: Monika
   m_TagString: Untagged
@@ -196,6 +197,20 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     spineTargetOffset: {x: 0, y: 0, z: 0}
+--- !u!136 &4673454560750106563
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8375019385557052905}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2
+  m_Height: 1.6
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.8, z: 0}
 --- !u!1001 &773716481945346767
 PrefabInstance:
   m_ObjectHideFlags: 0
