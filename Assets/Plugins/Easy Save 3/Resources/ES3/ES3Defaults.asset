@@ -38,12 +38,16 @@ MonoBehaviour:
     - Sirenix.OdinInspector.CompatibilityLayer
     - Febucci.TextAnimator.Demo.Runtime
     - CommandsInAnAssemblyDefinition
+    - GameCreator.Runtime.Core
+    - GameCreator.Tests.Core
     - Sirenix.OdinInspector.CompatibilityLayer.Editor
     - Febucci.TextAnimator.Editor
     - YarnSpinner.Unity.Editor
     - UMotionSourceEditor
     - UMotionSourceApplication
     - Febucci.TextAnimator.Demo.Editor
+    - GameCreator.Editor.Core
+    - Sirenix.OdinInspector.Modules.UnityMathematics
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1
