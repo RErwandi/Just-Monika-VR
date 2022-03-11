@@ -29,24 +29,24 @@ MonoBehaviour:
     referenceMode: 2
     serializationDepthLimit: 64
     assemblyNames:
-    - Assembly-CSharp
+    - GameCreator.Runtime.Core
     - Assembly-CSharp-firstpass
     - ES3
     - com.gamelokal.toolkit
     - YarnSpinner.Unity
+    - Assembly-CSharp
     - Febucci.TextAnimator.Runtime
-    - Sirenix.OdinInspector.CompatibilityLayer
     - Febucci.TextAnimator.Demo.Runtime
     - CommandsInAnAssemblyDefinition
-    - GameCreator.Runtime.Core
     - GameCreator.Tests.Core
-    - Sirenix.OdinInspector.CompatibilityLayer.Editor
+    - Sirenix.OdinInspector.CompatibilityLayer
+    - GameCreator.Editor.Core
     - Febucci.TextAnimator.Editor
     - YarnSpinner.Unity.Editor
+    - Sirenix.OdinInspector.CompatibilityLayer.Editor
     - UMotionSourceEditor
     - UMotionSourceApplication
     - Febucci.TextAnimator.Demo.Editor
-    - GameCreator.Editor.Core
     - Sirenix.OdinInspector.Modules.UnityMathematics
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
