@@ -107,12 +107,12 @@ MonoBehaviour:
   fixTransforms: 1
   solver:
     executedInEditor: 0
-    IKPosition: {x: -1.608995, y: 1.1508901, z: -0.00000036135316}
+    IKPosition: {x: -1.8149949, y: 1.1038902, z: -0.00000036135316}
     IKPositionWeight: 1
     root: {fileID: 8375019385557052904}
     target: {fileID: 0}
     spine:
-    - transform: {fileID: 0}
+    - transform: {fileID: 9178260747679062827}
       weight: 0
       solverPosition: {x: 0, y: 0, z: 0}
       solverRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -122,7 +122,7 @@ MonoBehaviour:
       sqrMag: 0
       axis: {x: 0, y: 0, z: 1.0000002}
       baseForwardOffsetEuler: {x: 0, y: 0, z: 0}
-    - transform: {fileID: 0}
+    - transform: {fileID: 5970133305167450025}
       weight: 0
       solverPosition: {x: 0, y: 0, z: 0}
       solverRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -133,7 +133,7 @@ MonoBehaviour:
       axis: {x: 0, y: 0, z: 1.0000002}
       baseForwardOffsetEuler: {x: 0, y: 0, z: 0}
     head:
-      transform: {fileID: 0}
+      transform: {fileID: 5709389072198747959}
       weight: 1
       solverPosition: {x: 0, y: 0, z: 0}
       solverRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -144,21 +144,21 @@ MonoBehaviour:
       axis: {x: 0, y: 0, z: 1.0000002}
       baseForwardOffsetEuler: {x: 0, y: 0, z: 0}
     eyes:
-    - transform: {fileID: 0}
+    - transform: {fileID: 2736602900694809894}
       weight: 0
       solverPosition: {x: 0, y: 0, z: 0}
       solverRotation: {x: 0, y: 0, z: 0, w: 0}
-      defaultLocalPosition: {x: -0.027810719, y: 0.053762816, z: 0.020831998}
+      defaultLocalPosition: {x: 0.027810719, y: 0.053762816, z: 0.020831998}
       defaultLocalRotation: {x: 0, y: -0, z: -0, w: 1}
       length: 0
       sqrMag: 0
       axis: {x: 0, y: 0, z: 1.0000002}
       baseForwardOffsetEuler: {x: 0, y: 0, z: 0}
-    - transform: {fileID: 0}
+    - transform: {fileID: 2553417294072963785}
       weight: 0
       solverPosition: {x: 0, y: 0, z: 0}
       solverRotation: {x: 0, y: 0, z: 0, w: 0}
-      defaultLocalPosition: {x: 0.027810719, y: 0.053762816, z: 0.020831998}
+      defaultLocalPosition: {x: -0.027810719, y: 0.053762816, z: 0.020831998}
       defaultLocalRotation: {x: 0, y: -0, z: -0, w: 1}
       length: 0
       sqrMag: 0
@@ -211,17 +211,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e18bdc0aa94ee774d98d21a1b486d65b,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e18bdc0aa94ee774d98d21a1b486d65b,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e18bdc0aa94ee774d98d21a1b486d65b,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e18bdc0aa94ee774d98d21a1b486d65b,
         type: 3}
@@ -301,9 +301,39 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 773716481945346767}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2553417294072963785 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -6209544099977412602, guid: e18bdc0aa94ee774d98d21a1b486d65b,
+    type: 3}
+  m_PrefabInstance: {fileID: 773716481945346767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2736602900694809894 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5816795994045538327, guid: e18bdc0aa94ee774d98d21a1b486d65b,
+    type: 3}
+  m_PrefabInstance: {fileID: 773716481945346767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5709389072198747959 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4213372439522908680, guid: e18bdc0aa94ee774d98d21a1b486d65b,
+    type: 3}
+  m_PrefabInstance: {fileID: 773716481945346767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5970133305167450025 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -2853338680934027930, guid: e18bdc0aa94ee774d98d21a1b486d65b,
+    type: 3}
+  m_PrefabInstance: {fileID: 773716481945346767}
+  m_PrefabAsset: {fileID: 0}
 --- !u!137 &8363504548075388118 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 9128207215404129817, guid: e18bdc0aa94ee774d98d21a1b486d65b,
+    type: 3}
+  m_PrefabInstance: {fileID: 773716481945346767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9178260747679062827 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8494757085901617636, guid: e18bdc0aa94ee774d98d21a1b486d65b,
     type: 3}
   m_PrefabInstance: {fileID: 773716481945346767}
   m_PrefabAsset: {fileID: 0}
