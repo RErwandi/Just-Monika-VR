@@ -27,7 +27,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4190419466719644406}
   m_RootOrder: 0
@@ -77,7 +76,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4190419466621531540}
   - {fileID: 8078382893424624031}
@@ -123,7 +121,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4190419468046284261}
   m_RootOrder: 1
@@ -173,7 +170,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4190419466719644406}
   - {fileID: 4190419467153676324}
@@ -225,7 +221,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4190419468046284261}
   m_RootOrder: 4
@@ -269,7 +264,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4190419466719644406}
   m_RootOrder: 1
@@ -313,7 +307,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4190419468046284261}
   m_RootOrder: 3
@@ -345,7 +338,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d0d6116ba2887a44b95d2073126b14ad, type: 2}
   - {fileID: 11400000, guid: 38f3df5f048a374468e2766a71adf901, type: 2}
   - {fileID: 11400000, guid: 5c80d59f1bd8f92459cbde129bcaaa3b, type: 2}
-  - {fileID: 11400000, guid: 56e3c610be40bee4487ed84833d984be, type: 2}
 --- !u!1 &8330456544121992755
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,7 +365,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4190419468046284261}
   m_RootOrder: 2
