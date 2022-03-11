@@ -1,0 +1,41 @@
+﻿title: Feedback
+tags:
+---
+Umm...
+<<set_eyes Closed_Happy>>
+Hi, everyone!
+<<set_eyes Normal>>
+I'm asked to playtest your game on {string($player)}'s behalf as he is enjoying his nap since afternoon.
+I'm not confident that my feedback is any good since I don't play video games that often but {string($player)} said a new perspective from a person who didn't know much about the game can be quite helpful sometimes.
+Let's see...
+<<set_eyes Closed_Happy>>
+I think I will start with my overall experience playing the game. The main idea looks fun!. Killing these bad monsters with such variety of spells to restore back the nature feels great.
+<<set_eyes Normal>>
+<<set_blush Lewd>>
+I can see why {string($player)} is so passionate working on it. Ahaha~
+<<set_blush None>>
+<<set_eyes Closed_Happy>>
+The visuals is also pleasing and charming as well. Great job for the artist is all I can say!
+<<set_eyes Normal>>
+<<set_eyebrows Furrowed>>
+Anyway... I had some trouble in particular stage though.
+You see, there is a stage in which there are ranged enemies in the corner of the map. Unfortunately, I was playing with Spell blade as my main spell and didn't get any ranged modifier resulting in no way I can kill those monsters.
+<<set_eyebrows Thinking>>
+Also, I don't know if this is intended or not but is it supposed to be easy?
+<<set_eyes Sparkle>>
+Because I can clear the first chapter in my first playthrough. Can you believe that ?! Ahaha~
+<<set_eyes Normal>>
+<<set_eyebrows Straight>>
+As for resonance... I feel overwhelmed at first, but I can see myself understand more about it in no time though. It does not seems that complex to me.
+I think that's all I can think of about the current state of the game.
+<<set_eyebrows Straight>>
+<<set_eyes Wide>>
+Oh right, I have a message from Rey about the design decision of the game.
+<<set_eyes Normal>>
+<<set_eyebrows Straight>>
+He said be careful about giving players too much power in the game. Always keep in mind that the balancing must consider our monetization aspect as well.
+For example, If player can get about 20% more damage to modifiers just by leveling one level of their main spell, who wants to spent money for tier upgrade which only grant you 20% more damage just to spell, right?
+<<set_eyes Closed_Happy>>
+That's all about it. So, good luck with your game!
+And thank you for listening~
+===
