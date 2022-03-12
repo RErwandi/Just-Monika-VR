@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using GameLokal.Toolkit;
 using Sirenix.OdinInspector;
+using UnityEngine;
 
 namespace JustMonika.VR
 {
@@ -27,6 +28,18 @@ namespace JustMonika.VR
         public static GreetingSetting GetGreeting(int index)
         {
             return Instance.greetings[index];
+        }
+        
+        public static GreetingSetting GetRandomGreeting()
+        {
+            GreetingSetting chosenGreeting;
+            do
+            {
+                var r = Random.Range(0, Greetings.Count);
+                chosenGreeting = Greetings[r];
+            } while (!chosenGreeting.HasValidCondition());
+            
+            return chosenGreeting;
         }
     }
 }

@@ -1,18 +1,20 @@
 using System;
 using GameLokal.Toolkit;
+using UnityEngine;
 using Yarn.Unity;
 
 namespace JustMonika.VR
 {
-    public class DialogueSystem : Singleton<DialogueSystem>
+    public class DialogueSystem : MonoBehaviour
     {
-        protected override bool ShouldNotDestroyOnLoad()
-        {
-            return false;
-        }
 
         public DialogueRunner dialogueRunner;
         private Action onDialogueComplete;
+
+        public void Initialize()
+        {
+            dialogueRunner.VariableStorage = Blackboard.VariableStorage;
+        }
 
         private void Start()
         {

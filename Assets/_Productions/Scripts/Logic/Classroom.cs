@@ -54,7 +54,7 @@ namespace JustMonika.VR
         private void StartTopicDialogue(DialogueSetting dialogueSetting)
         {
             Blackboard.GamePersistence.AddVisitedTopic(dialogueSetting.name);
-            DialogueSystem.Instance.StartDialogue(dialogueSetting.name, OnDialogueFinish);
+            Blackboard.DialogueSystem.StartDialogue(dialogueSetting.name, OnDialogueFinish);
             topicsQueue.RemoveAt(0);
         }
 

@@ -59,7 +59,7 @@ namespace JustMonika.VR
             if(autoBlink)
                 StartCoroutine(Blink());
 
-            dialogueRunner = DialogueSystem.Instance.dialogueRunner;
+            dialogueRunner = Blackboard.DialogueSystem.dialogueRunner;
         }
 
         private void OnDestroy()

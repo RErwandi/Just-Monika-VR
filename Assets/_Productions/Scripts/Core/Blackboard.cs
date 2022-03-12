@@ -1,4 +1,3 @@
-using System;
 using GameLokal.Toolkit;
 using UnityEngine;
 
@@ -14,11 +13,15 @@ namespace JustMonika.VR
 
         [SerializeField] private TimeManager timeManager;
         public static TimeManager Time => Instance.timeManager;
+
+        [SerializeField] private DialogueSystem dialogueSystem;
+        public static DialogueSystem DialogueSystem => Instance.dialogueSystem;
         
         private void Start()
         {
             InitializeAllPersistence();
             variableStorage.Initialize();
+            dialogueSystem.Initialize();
             
             SaveLoadManager.Instance.Load();
             gamePersistence.SendToVariableStorage();

@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3966795919797170423}
-  - component: {fileID: 3966795919797170422}
   m_Layer: 0
   m_Name: Classroom Conversation Logic
   m_TagString: Untagged
@@ -27,28 +26,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3966795919797170422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3966795919797170420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2588196ffea20c47b6abf58e8a94a05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  topics:
-  - {fileID: 11400000, guid: 5893e429c7cbbf3449254c11e962cee5, type: 2}
-  - {fileID: 11400000, guid: 9873fab36a7fa984daf6345111ebd022, type: 2}
-  - {fileID: 11400000, guid: 48ff88418457dcc4baa9e0b881aa7a2e, type: 2}
-  - {fileID: 11400000, guid: 68c9d8cb6ea4b9d49b427f93370d79da, type: 2}
-  - {fileID: 11400000, guid: 2b1ae686c9565f74c8ae0ec086335044, type: 2}
-  - {fileID: 11400000, guid: d0d6116ba2887a44b95d2073126b14ad, type: 2}
-  - {fileID: 11400000, guid: 38f3df5f048a374468e2766a71adf901, type: 2}
-  - {fileID: 11400000, guid: 5c80d59f1bd8f92459cbde129bcaaa3b, type: 2}

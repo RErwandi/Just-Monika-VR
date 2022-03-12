@@ -1,4 +1,7 @@
+using System;
 using GameLokal.Toolkit;
+using RootMotion.FinalIK;
+using UnityEngine;
 
 namespace JustMonika.VR
 {
@@ -29,9 +32,16 @@ namespace JustMonika.VR
             }
         }
 
+        [SerializeField] private LookAtIK lookAtIk;
+
         protected override void Awake()
         {
             facial = GetComponent<MonikaFacial>();
+        }
+
+        private void Start()
+        {
+            if (Camera.main is not null) lookAtIk.solver.target = Camera.main.transform;
         }
     }
 }
