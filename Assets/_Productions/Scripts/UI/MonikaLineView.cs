@@ -18,6 +18,8 @@ namespace JustMonika.VR
 
         private void Start()
         {
+            Blackboard.DialogueSystem.RegisterDialogueView(this);
+            
             textAnimatorPlayer.onTextShowed.AddListener(AdvanceLine);
             
             HideCanvas();

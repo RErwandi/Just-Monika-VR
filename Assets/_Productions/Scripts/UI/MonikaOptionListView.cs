@@ -32,6 +32,7 @@ namespace JustMonika.VR
 
         public void Start()
         {
+            Blackboard.DialogueSystem.RegisterDialogueView(this);
             canvasGroup.alpha = 0;
             canvasGroup.interactable = false;
             canvasGroup.blocksRaycasts = false;
