@@ -10,11 +10,13 @@ namespace JustMonika.VR
 
             var randomGreeting = Database.GetRandomGreeting();
             Blackboard.DialogueSystem.StartDialogue(randomGreeting.name, OnGreetingFinish);
+            Player.DisableMovement();
         }
 
         private void OnGreetingFinish()
         {
             Debug.Log($"Greeting finished");
+            Player.EnableMovement();
         }
     }
 }

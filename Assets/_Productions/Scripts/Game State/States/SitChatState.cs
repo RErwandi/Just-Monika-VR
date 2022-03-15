@@ -2,22 +2,44 @@ using System.Collections.Generic;
 using System.Linq;
 using GameLokal.Toolkit;
 using Sirenix.OdinInspector;
-using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace JustMonika.VR
 {
-    public class Classroom : MonoBehaviour
+    public class SitChatState : BaseState
     {
+        public Marker playerSitPosition;
         [ShowInInspector, ReadOnly]
         private List<DialogueSetting> topicsQueue = new List<DialogueSetting>();
-
-        private void Start()
+        
+        protected override void OnStateEnter()
         {
             QueueTopics();
             Invoke("StartRandomTopic", Blackboard.GamePersistence.RandomTopicInterval);
+            
+            EnterState();
         }
 
+        protected override void OnStateExit()
+        {
+            CancelInvoke("StartRandomTopic");
+            
+            ExitState();
+        }
+
+        private void EnterState()
+        {
+            Player.Mount();
+            Player.DisableCameraMovement();
+            Player.DisableMovement();
+            Player.Teleport(playerSitPosition);
+        }
+
+        private void ExitState()
+        {
+            Player.EnableCameraMovement();
+            Player.EnableMovement();
+        }
+        
         private void QueueTopics()
         {
             topicsQueue = Database.Instance.topics.ToList();
@@ -50,66 +72,17 @@ namespace JustMonika.VR
             var chosenTopic = topicsQueue[0];
             StartTopicDialogue(chosenTopic);
         }
-
+        
         private void StartTopicDialogue(DialogueSetting dialogueSetting)
         {
             Blackboard.GamePersistence.AddVisitedTopic(dialogueSetting.name);
             Blackboard.DialogueSystem.StartDialogue(dialogueSetting.name, OnDialogueFinish);
             topicsQueue.RemoveAt(0);
         }
-
+        
         private void OnDialogueFinish()
         {
             Invoke("StartRandomTopic", Blackboard.GamePersistence.RandomTopicInterval);
-        }
-
-        [Button]
-        public DialogueSetting GetRandomTopics()
-        {
-            DialogueSetting chosenTopic;
-            do
-            {
-                var r = Random.Range(0, Database.Topics.Count);
-                chosenTopic = Database.GetTopic(r);
-            } while (!ConditionApproved(chosenTopic));
-
-            Debug.Log($"Chosen topic is {chosenTopic.name}");
-            return chosenTopic;
-        }
-
-        private bool ConditionApproved(DialogueSetting dialogue)
-        {
-            foreach (var condition in dialogue.conditional)
-            {
-                // Variable Condition Check
-                if (condition.rulesType == DialogueRulesType.HasVariable)
-                {
-                    if (!Blackboard.VariableStorage.Contains(condition.variableName))
-                    {
-                        return false;
-                    }
-                }
-
-                // Affection Condition Check
-                if (condition.rulesType == DialogueRulesType.AffectionLevel)
-                {
-                    float requiredAffection = 0;
-                    foreach (var affectionSetting in GameConfig.Instance.affectionSettings)
-                    {
-                        if (affectionSetting.affection == condition.minimumAffectionLevel)
-                        {
-                            requiredAffection = affectionSetting.reqAffection;
-                        }
-                    }
-
-                    if (Blackboard.GamePersistence.Affection < requiredAffection)
-                    {
-                        return false;
-                    }
-                }
-            }
-
-            return true;
         }
     }
 }

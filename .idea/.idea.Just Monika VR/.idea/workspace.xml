@@ -9,6 +9,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/dev.yarnspinner.unity@2.1.0/Runtime/DialogueRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Productions/Scripts/Instructions/ChangeStateInstructions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Productions/Scripts/Core/GamePersistence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.gamelokal.toolkit@1.7.0/Runtime/Extensions/DictionaryExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Productions/Scripts/Monika/MonikaAffection.cs" root0="FORCE_HIGHLIGHTING" />
@@ -18,7 +19,9 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.gamelokal.toolkit@1.7.0/Runtime/Patterns/Event Messaging/GameEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Productions/Scripts/Dialogue/GreetingSetting.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Productions/Scripts/Core/DialogueSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Productions/Scripts/Interaction/Marker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/dev.yarnspinner.unity@2.1.0/Runtime/Views/DialogueViewBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Productions/Scripts/Interaction/Hotspot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.gamelokal.toolkit@1.7.0/Runtime/Tools/Visual Novel/Scripts/Character Editor/CharacterConfig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.gamelokal.toolkit@1.7.0/Runtime/Tools/Visual Novel/Scripts/Character Editor/CharacterData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/BaseInputModule.cs" root0="SKIP_HIGHLIGHTING" />
@@ -29,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Productions/Scripts/Dialogue/DialogueRulesType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dd6a7ab2b1e44a3785a948a7c8e1baf82cc00/b4/778cdbd5/MMD4MecanimBoneImplInspector.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Productions/Scripts/Game State/GameStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Productions/Scripts/Game State/States/SitChatState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/dev.yarnspinner.unity@2.1.0/Runtime/VariableStorageBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Productions/Scripts/Game State/States/BaseState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/dev.yarnspinner.unity@2.1.0/Runtime/InMemoryVariableStorage.cs" root0="SKIP_HIGHLIGHTING" />
