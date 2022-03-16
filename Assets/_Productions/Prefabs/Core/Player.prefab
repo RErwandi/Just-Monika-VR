@@ -608,6 +608,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5586b68922bbbf34ea9eb1814ee12d6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 7742688727247735174}
+  crouchDivider: 1.3
 --- !u!1 &7745203457846528215
 GameObject:
   m_ObjectHideFlags: 0

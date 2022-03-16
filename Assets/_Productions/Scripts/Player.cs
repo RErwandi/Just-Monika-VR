@@ -1,61 +1,100 @@
 using GameLokal.Toolkit;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace JustMonika.VR
 {
     public class Player : Singleton<Player>
     {
+        [SerializeField] private Transform camera;
+        
+        [Title("Crouch")]
+        [SerializeField] private float crouchDivider = 1.5f;
         private FirstPersonLook firstPersonLook;
         private FirstPersonMovement firstPersonMovement;
-        private Collider coll;
+        private CapsuleCollider coll;
         private Rigidbody rb;
+
+        private float originHeight;
+        private float originCenter;
+        private float originCameraY;
 
         protected override void Awake()
         {
             base.Awake();
             firstPersonLook = GetComponentInChildren<FirstPersonLook>();
             firstPersonMovement = GetComponentInChildren<FirstPersonMovement>();
-            coll = GetComponentInChildren<Collider>();
+            coll = GetComponentInChildren<CapsuleCollider>();
             rb = GetComponentInChildren<Rigidbody>();
+            originCenter = coll.center.y;
+            originHeight = coll.height;
+            originCameraY = camera.localPosition.y;
         }
 
-        public static void DisableMovement()
+        public void DisableMovement()
         {
-            Instance.firstPersonMovement.enabled = false;
+            firstPersonMovement.enabled = false;
         }
         
-        public static void EnableMovement()
+        public void EnableMovement()
         {
-            Instance.firstPersonMovement.enabled = true;
+            firstPersonMovement.enabled = true;
         }
 
-        public static void DisableCameraMovement()
+        public void DisableCameraMovement()
         {
-            Instance.firstPersonLook.enabled = false;
+            firstPersonLook.enabled = false;
         }
         
-        public static void EnableCameraMovement()
+        public void EnableCameraMovement()
         {
-            Instance.firstPersonLook.enabled = true;
+            firstPersonLook.enabled = true;
         }
 
-        public static void Teleport(Marker marker)
+        public void Teleport(Marker marker)
         {
             var m = marker.transform;
-            Instance.transform.position = m.position;
-            Instance.transform.rotation = m.rotation;
+            transform.position = m.position;
+            transform.rotation = m.rotation;
         }
 
-        public static void Mount()
+        public void Mount()
         {
-            Instance.coll.enabled = false;
-            Instance.rb.isKinematic = true;
+            if(coll != null)
+                coll.enabled = false;
+            if(rb != null)
+                rb.isKinematic = true;
         }
         
-        public static void UnMount()
+        public void UnMount()
         {
-            Instance.coll.enabled = true;
-            Instance.rb.isKinematic = false;
+            if(coll != null)
+                coll.enabled = true;
+            if(rb != null)
+                rb.isKinematic = false;
+        }
+
+        public void Crouch()
+        {
+            if (coll == null) return;
+
+            coll.height = originHeight / crouchDivider;
+            coll.center = new Vector3(0f, originCenter / crouchDivider, 0f);
+            camera.localPosition = new Vector3(0f, originCameraY / crouchDivider, 0f);
+        }
+
+        public void UnCrouch()
+        {
+            if (coll == null) return;
+
+            coll.height = originHeight;
+            coll.center = new Vector3(0f, originCenter, 0f);
+            camera.localPosition = new Vector3(0f, originCameraY, 0f);
+        }
+
+        public void FaceFrontCamera()
+        {
+            camera.localRotation = Quaternion.identity;
         }
     }
 }

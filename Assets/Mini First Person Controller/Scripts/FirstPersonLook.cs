@@ -10,7 +10,7 @@ public class FirstPersonLook : MonoBehaviour
     Vector2 velocity;
     Vector2 frameVelocity;
 
-
+    private bool cameraLocked;
     void Reset()
     {
         // Get the character from the FirstPersonMovement in parents.
@@ -20,10 +20,21 @@ public class FirstPersonLook : MonoBehaviour
     void Start()
     {
         // Lock the mouse cursor to the game screen.
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
+        cameraLocked = true;
+    }
+    
+    void Update()
+    {
+        SetCameraLock();
+        
+        if (cameraLocked)
+        {
+            UpdateRotation();
+        }
     }
 
-    void Update()
+    private void UpdateRotation()
     {
         // Get smooth velocity.
         Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
@@ -35,5 +46,26 @@ public class FirstPersonLook : MonoBehaviour
         // Rotate camera up-down and controller left-right from velocity.
         transform.localRotation = Quaternion.AngleAxis(-velocity.y, Vector3.right);
         character.localRotation = Quaternion.AngleAxis(velocity.x, Vector3.up);
+    }
+
+    private void SetCameraLock()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+            if (cameraLocked)
+            {
+                cameraLocked = false;
+                Cursor.lockState = CursorLockMode.None;
+            }
+        }
+        
+        if (Input.GetKeyUp(KeyCode.LeftAlt))
+        {
+            if (!cameraLocked)
+            {
+                cameraLocked = true;
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+        }
     }
 }

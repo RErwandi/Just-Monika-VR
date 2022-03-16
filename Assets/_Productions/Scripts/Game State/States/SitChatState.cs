@@ -8,6 +8,7 @@ namespace JustMonika.VR
     public class SitChatState : BaseState
     {
         public Marker playerSitPosition;
+        public Marker monikaSitPosition;
         [ShowInInspector, ReadOnly]
         private List<DialogueSetting> topicsQueue = new List<DialogueSetting>();
         
@@ -28,16 +29,27 @@ namespace JustMonika.VR
 
         private void EnterState()
         {
-            Player.Mount();
-            Player.DisableCameraMovement();
-            Player.DisableMovement();
-            Player.Teleport(playerSitPosition);
+            Player.Instance.Mount();
+            Player.Instance.DisableCameraMovement();
+            Player.Instance.DisableMovement();
+            Player.Instance.Teleport(playerSitPosition);
+            Player.Instance.Crouch();
+            Player.Instance.FaceFrontCamera();
+            
+            Monika.Mount();
+            Monika.Teleport(monikaSitPosition);
+            Monika.Instance.SetAnim("Sit", true);
         }
 
         private void ExitState()
         {
-            Player.EnableCameraMovement();
-            Player.EnableMovement();
+            Player.Instance.UnMount();
+            Player.Instance.EnableCameraMovement();
+            Player.Instance.EnableMovement();
+            Player.Instance.UnCrouch();
+
+            Monika.UnMount();
+            Monika.Instance.SetAnim("Sit", false);
         }
         
         private void QueueTopics()

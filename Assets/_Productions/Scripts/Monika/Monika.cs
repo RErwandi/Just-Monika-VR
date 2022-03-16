@@ -12,6 +12,10 @@ namespace JustMonika.VR
             return false;
         }
 
+        [SerializeField] private Animator animator;
+        private Collider coll;
+        private Rigidbody rb;
+
         private MonikaFacial facial;
         public MonikaFacial Facial => facial;
 
@@ -37,11 +41,46 @@ namespace JustMonika.VR
         protected override void Awake()
         {
             facial = GetComponent<MonikaFacial>();
+            coll = GetComponentInChildren<Collider>();
+            rb = GetComponentInChildren<Rigidbody>();
         }
 
         private void Start()
         {
             if (Camera.main is not null) lookAtIk.solver.target = Camera.main.transform;
+        }
+        
+        public static void Teleport(Marker marker)
+        {
+            var m = marker.transform;
+            Instance.transform.position = m.position;
+            Instance.transform.rotation = m.rotation;
+        }
+
+        public static void Mount()
+        {
+            if(Instance.coll != null)
+                Instance.coll.enabled = false;
+            if(Instance.rb != null)
+                Instance.rb.isKinematic = true;
+        }
+        
+        public static void UnMount()
+        {
+            if(Instance.coll != null)
+                Instance.coll.enabled = true;
+            if(Instance.rb != null)
+                Instance.rb.isKinematic = false;
+        }
+
+        public void SetAnim(string param, bool value)
+        {
+            animator.SetBool(param, value);
+        }
+        
+        public void SetAnim(string param, float value)
+        {
+            animator.SetFloat(param, value);
         }
     }
 }
